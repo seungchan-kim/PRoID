@@ -1,0 +1,44 @@
+root_path: '/home/seungchan/proid'
+
+environment: '50010535_PLAN1'
+
+start_pose: [215,215]
+
+num_robots: 5
+
+max_steps: 1000
+
+lidar_range: 15
+num_laser: 2500
+
+pixel_per_meter: 10
+
+comm_mode: 'circle'
+
+score_mode: 'mapex'
+
+comm_range: 10
+
+other_traj_threshold: 5
+other_intent_threshold: 10
+
+save_viz: True
+viz_comm: False
+viz_freq: 20
+
+viz_video: False
+
+pd_size: 200
+
+relay_trigger: 'periodic'
+relay_period: 200
+relay_transfer: True
+final_relay: True
+
+failure_mode: False
+failure_lambda: 1300
+failure_k: 1.5
+
+lama_device: 'cuda:0'
+lama_transform_variant: 'default_map_eval'
+lama_out_size: (512, 512)
